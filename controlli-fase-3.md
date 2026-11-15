@@ -15,7 +15,7 @@ Fase 3. Data: 13/11/2026.
 | `spazi/aula-n5/` | 1 | 14 | 1 di 1 | 0 | 13/11/2026 | sì | sì (Spazio 5) |
 | `spazi/aula-n6/` | 1 | 16 | 1 di 1 | 0 | 13/11/2026 | sì | sì (Spazio 6) |
 | `spazi/porta-aula/` | 1 | 15 | 1 di 1 | 0 | 13/11/2026 | sì | sì (Spazio 7) |
-| `spazi/porta-BW/` | 1 | 18 | 1 di 1 | 0 | 13/11/2026 | sì | sì (Spazio 8) |
+| `spazi/porta-bw/` | 1 | 18 | 1 di 1 | 0 | 13/11/2026 | sì | sì (Spazio 8) |
 | `spazi/porta-ingresso/` | 1 | 21 | 1 di 1 | 0 | 13/11/2026 | sì | sì (Spazio 9) |
 | `spazi/porta-ufficio/` | 1 | 17 | 1 di 1 | 0 | 13/11/2026 | sì | sì (Spazio 10) |
 | `spazi/_template/` | 1 | — (segnaposto) | esempio | sì, per progetto | — | sì | no, per progetto |

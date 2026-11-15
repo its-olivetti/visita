@@ -22,7 +22,7 @@ sito/
 │   ├── aula-n5/reti-e-infrastrutture.png
 │   ├── aula-n6/lavoro-di-squadra.png
 │   ├── porta-aula/cybersecurity-e-lavoro.png
-│   ├── porta-BW/brain-waves-crittografia.png
+│   ├── porta-bw/brain-waves-crittografia.png
 │   ├── porta-ingresso/ingresso-centro.png
 │   └── porta-ufficio/tutor-e-coordinatori.png
 └── spazi/
@@ -34,7 +34,7 @@ sito/
     ├── aula-n5/index.html
     ├── aula-n6/index.html
     ├── porta-aula/index.html
-    ├── porta-BW/index.html
+    ├── porta-bw/index.html
     ├── porta-ingresso/index.html
     └── porta-ufficio/index.html
 ```
@@ -57,7 +57,7 @@ nella pagina.
 | 5 | Divisore Aula | `spazi/aula-n5/` | Reti, sistemi e infrastrutture digitali | blu | previsto |
 | 6 | Divisore Aula | `spazi/aula-n6/` | Collaborare è una competenza tecnica | rosso | previsto |
 | 7 | Porta Aula | `spazi/porta-aula/` | Cybersecurity: un settore che cambia il mondo del lavoro | rosa | previsto |
-| 8 | Porta BW | `spazi/porta-BW/` | Brain Waves: dove la crittografia diventa ricerca | rosso | sì (Fase 1) |
+| 8 | Porta BW | `spazi/porta-bw/` | Brain Waves: dove la crittografia diventa ricerca | rosso | sì (Fase 1) |
 | 9 | Porta Ingresso | `spazi/porta-ingresso/` | Benvenuto nel Centro di Innovazione e Formazione Adriano Olivetti | azzurro | previsto |
 | 10 | Porta Ufficio | `spazi/porta-ufficio/` | Un punto di riferimento, sempre | rosso | previsto |
 
@@ -172,20 +172,14 @@ git push
 
 GitHub Pages ricostruisce in uno o due minuti.
 
-### Maiuscole: verifica fatta sul sito vero
+### Maiuscole negli indirizzi
 
-La cartella `spazi/porta-BW/` ha la "BW" maiuscola, come nello slug della
-Fase 1. Su GitHub l'indirizzo è sensibile alle maiuscole e la prova è questa:
+Su GitHub l'indirizzo è sensibile alle maiuscole: `spazi/porta-bw/` funziona,
+`spazi/porta-BW/` risponde 404. Per questo, il 15/11/2026, le cartelle sono
+state portate tutte in minuscolo (`spazi/porta-bw/` e `img/porta-bw/`), come
+era già per gli altri nove spazi.
 
-| URL | Risposta |
-|---|---|
-| `https://its-olivetti.github.io/visita/spazi/porta-BW/` | 200 (funziona) |
-| `https://its-olivetti.github.io/visita/spazi/porta-bw/` | 404 (non esiste) |
-
-Quindi il QR di quello spazio deve contenere esattamente `porta-BW`. Se
-preferisci eliminare ogni rischio, rinomina **adesso** la cartella in
-`porta-bw` e aggiorna il link in `index.html`: è una modifica di due minuti, ma
-va fatta prima di stampare i QR.
+Non cambiare mai gli slug dopo aver stampato i QR: l'indirizzo è dentro il QR.
 
 ## 8. Controlli prima di stampare i QR
 

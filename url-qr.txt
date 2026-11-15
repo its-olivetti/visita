@@ -14,7 +14,7 @@ Verificati il 15/11/2026: tutte le pagine rispondono 200.
 | 5 | Divisore Aula QR n.1 | blu | https://its-olivetti.github.io/visita/spazi/aula-n5/ |
 | 6 | Divisore Aula QR n.2 | rosso | https://its-olivetti.github.io/visita/spazi/aula-n6/ |
 | 7 | Porta Aula | rosa | https://its-olivetti.github.io/visita/spazi/porta-aula/ |
-| 8 | Porta BW | rosso | https://its-olivetti.github.io/visita/spazi/porta-BW/ |
+| 8 | Porta BW | rosso | https://its-olivetti.github.io/visita/spazi/porta-bw/ |
 | 9 | Porta Ingresso | azzurro | https://its-olivetti.github.io/visita/spazi/porta-ingresso/ |
 | 10 | Porta Ufficio | rosso | https://its-olivetti.github.io/visita/spazi/porta-ufficio/ |
 
@@ -23,9 +23,9 @@ https://its-olivetti.github.io/visita/
 
 ## Avvertenze
 
-1. **Maiuscole**: l'URL dello spazio 8 contiene `porta-BW` con BW maiuscolo.
-   Scritto `porta-bw` il sito risponde 404 (verificato). Se rinomini la cartella
-   in `porta-bw`, aggiorna questo elenco e il link in `index.html`.
+1. **Maiuscole**: tutti gli indirizzi sono in minuscolo. Su GitHub le maiuscole
+   contano: `porta-BW` risponde 404, `porta-bw` funziona. Se rinomini una
+   cartella, aggiorna questo elenco e il link in `index.html`.
 2. **Mai cambiare gli slug** dopo aver stampato i QR: l'indirizzo è nel QR.
 3. Il sito è pubblico: chiunque abbia il link vede le pagine, non solo chi
    scansiona il QR.
