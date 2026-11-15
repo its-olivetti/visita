@@ -1,0 +1,130 @@
+Fase 1: analisi e preparazione dei contenuti
+
+Obiettivo: prima di toccare il codice, sapere esattamente quali spazi hai, come si chiameranno le loro pagine e quali contenuti servono. È la fase più importante perché gli indirizzi devi sceglierli una volta sola.
+
+Passo 1: elenca gli spazi
+
+Crea una tabella (anche su un foglio di carta o Google Fogli) con una riga per ogni foglio con QR. Esempio da copiare:
+
+Passo 1:
+| N. | Spazio         | Nome file       | Posizione fisica del foglio | Foto? | Video? | Pronto? |
+|----|----------------|-----------------|-----------------------------|-------|--------|---------|
+| 1  | Aula           | aula-n1         | Muro Aula                   | No    | No     | **NO**  |
+| 2  | Aula           | aula-n2         | Muro Aula                   | No    | No     | **NO**  |
+| 3  | Aula           | aula-n3         | Muro Aula                   | No    | No     | **NO**  |
+| 4  | Aula           | aula-n4         | Muro Aula                   | No    | No     | **NO**  |
+| 5  | Aula           | aula-n5         | Divisore Aula               | No    | No     | **NO**  |
+| 6  | Aula           | aula-n6         | Divisore Aula               | No    | No     | **NO**  |
+| 7  | Porta Aula     | porta-aula      | Porta Aula                  | No    | No     | **NO**  |
+| 8  | Porta BW       | porta-BW        | Porta BW                    | No    | Si     | **NO**  |
+| 9  | Porta Ingresso | porta-ingresso  | Porta Ingresso              | No    | No     | **NO**  |
+| 10 | Porta Ufficio  | porta-ufficio   | Porta Ufficio               | No    | No     | **NO**  |
+
+Passo 2: prepara il contenuto di ogni pagina
+
+SPAZIO: Aula QR n.1 ROSSO
+TITOLO: Le competenze che non si vedono, ma fanno la differenza
+FRASE INTRODUTTIVA: In cybersecurity non basta conoscere la tecnologia: serve saper lavorare con le persone, comunicare i rischi e affrontare problemi complessi.
+TESTO ESPLICATIVO: In questo spazio scopri le competenze trasversali che accompagnano ogni percorso ITS: comunicazione, lavoro di squadra, project management, problem solving, organizzazione aziendale, inglese tecnico, sicurezza sul lavoro e GDPR. Sono abilità utili in ogni ambito professionale, perché un tecnico efficace non risolve solo un problema tecnico: sa spiegarlo, condividerlo e trasformarlo in una soluzione concreta. Nel corso di AI Cybersecurity Specialist, ad esempio, sapere raccontare una vulnerabilità a un’azienda è importante quanto saperla individuare.
+FOTO (opzionale): Studenti che lavorano in gruppo davanti a un computer o durante un’attività di squadra.
+VIDEO (opzionale): Breve intervista a uno studente o docente su “cosa significa lavorare in team in cybersecurity”.
+ULTIMO AGGIORNAMENTO: 13/11/2026
+
+SPAZIO: Aula QR n.2 blu
+TITOLO: Dalla teoria alla pratica: il metodo learning by doing
+FRASE INTRODUTTIVA: Qui non si impara soltanto ascoltando: si sperimenta, si prova, si sbaglia e si costruiscono soluzioni reali.
+TESTO ESPLICATIVO: Le competenze tecniche degli ITS si sviluppano attraverso laboratori, simulazioni, project work e attività pratiche. Nel percorso di Cybersecurity Specialist si lavora su reti, sistemi informatici, protezione dei dati, analisi delle vulnerabilità e gestione delle minacce. L’obiettivo è formare professionisti capaci di applicare subito ciò che hanno studiato nelle aziende, non solo di ripetere concetti teorici. Il metodo ITS prevede infatti una forte componente pratica e una stretta collaborazione con le imprese del territorio.
+FOTO (opzionale): Laboratorio informatico, studenti al PC o dettaglio di un’attività pratica.
+VIDEO (opzionale): Clip di un laboratorio, una simulazione di attacco/difesa o un project work.
+ULTIMO AGGIORNAMENTO: 13/11/2026
+
+SPAZIO: Aula QR n.3 viola
+TITOLO: Proteggere il digitale
+FRASE INTRODUTTIVA: Ogni giorno aziende, persone e istituzioni producono e condividono dati: proteggerli è diventato uno dei compiti più importanti del mondo del lavoro.
+TESTO ESPLICATIVO: Il corso AI Cybersecurity Specialist, forma tecnici capaci di gestire e proteggere informazioni e sistemi informatici. Gli studenti imparano a riconoscere vulnerabilità, gestire policy di sicurezza, affrontare minacce tecniche, umane e organizzative, e documentare ciò che scoprono. 
+FOTO (opzionale): Studente davanti a più schermate, codice, rete o dashboard di sicurezza.
+VIDEO (opzionale): Video breve su “cosa fa un cybersecurity specialist durante una giornata di lavoro”.
+ULTIMO AGGIORNAMENTO: 13/11/2026
+
+Aula QR n.4 — Viola
+
+SPAZIO: Aula QR n.4 viola
+TITOLO: Non solo attacchi: analisi, prevenzione e risposta
+FRASE INTRODUTTIVA: La cybersecurity non riguarda soltanto “fermare gli hacker”: significa capire i rischi prima che diventino problemi.
+TESTO ESPLICATIVO: In questo spazio approfondisci il lato analitico della figura professionale: ricerca e individuazione delle vulnerabilità, analisi forense, gestione degli incidenti e documentazione delle attività di sicurezza. Un Cybersecurity Specialist deve sapere osservare i sistemi, interpretare ciò che accade e proporre misure di prevenzione efficaci. È una professione che unisce curiosità, precisione, logica e capacità di ragionare sotto pressione.
+FOTO (opzionale): Immagine simbolica di lente d’ingrandimento su codice, log di rete o analisi forense.
+VIDEO (opzionale): Mini-tutorial o animazione su “come si analizza un incidente informatico”.
+ULTIMO AGGIORNAMENTO: 13/11/2026
+
+SPAZIO: Divisore Aula QR n.1 blu
+TITOLO: Reti, sistemi e infrastrutture digitali
+FRASE INTRODUTTIVA: Dietro ogni app, sito o servizio online c’è un’infrastruttura da costruire, gestire e proteggere.
+TESTO ESPLICATIVO: Questo spazio introduce le competenze tecniche legate a reti, sistemi operativi, server, cloud e infrastrutture digitali. Sono le fondamenta su cui si costruisce la cybersecurity: per difendere una rete bisogna prima capire come funziona, quali dispositivi la compongono e dove possono nascere le vulnerabilità. Nel percorso ITS queste conoscenze vengono applicate in laboratorio e nei project work con le aziende.
+FOTO (opzionale): Foto di cavi, server, switch, router o studenti al lavoro su una rete.
+VIDEO (opzionale): Breve video esplicativo su “cos’è una rete informatica e perché va protetta”.
+ULTIMO AGGIORNAMENTO: 13/11/2026
+
+SPAZIO: Divisore Aula QR n.2 rosso
+TITOLO: Collaborare è una competenza tecnica
+FRASE INTRODUTTIVA: Le soluzioni migliori nascono quasi sempre dal confronto: in ITS si impara anche a lavorare insieme.
+TESTO ESPLICATIVO: Il teamworking, la comunicazione efficace e la capacità di organizzare un progetto sono competenze trasversali presenti in tutti i percorsi ITS. Nella cybersecurity sono particolarmente importanti: un incidente informatico va gestito con ruoli chiari, informazioni condivise e decisioni rapide. Qui puoi scoprire come il lavoro di squadra trasforma un problema complesso in un obiettivo raggiungibile.
+FOTO (opzionale): Gruppo di studenti durante una brainstorming o una challenge.
+VIDEO (opzionale): Time-lapse di un’attività di gruppo o testimonianza di studenti.
+ULTIMO AGGIORNAMENTO: 13/11/2026
+
+SPAZIO: Porta Aula rosa
+TITOLO: Cybersecurity: un settore che cambia il mondo del lavoro
+FRASE INTRODUTTIVA: La trasformazione digitale, l’intelligenza artificiale e la sicurezza informatica interessano ormai aziende di ogni settore.
+TESTO ESPLICATIVO: Il macro-settore della cybersecurity riguarda la protezione di dati, sistemi, reti e identità digitali. Con la crescita di cloud, intelligenza artificiale, IoT e servizi online, le imprese hanno bisogno di professionisti capaci di prevenire attacchi, gestire i rischi e rispondere agli incidenti. Gli ITS nascono proprio per rispondere ai bisogni del territorio, formando figure tecniche specializzate insieme alle aziende.
+FOTO (opzionale): Immagine che richiama il mondo digitale: rete, luci, codice o dati.
+VIDEO (opzionale): Video di apertura su “perché la cybersecurity è una professione del futuro”.
+ULTIMO AGGIORNAMENTO: 13/11/2026
+
+SPAZIO: Porta BW rosso
+TITOLO: Brain Waves: dove la crittografia diventa ricerca
+FRASE INTRODUTTIVA: Dietro questa porta c’è Brain Waves, il laboratorio di Massimo Bertaccini, docente del modulo di crittografia del corso.
+TESTO ESPLICATIVO: Massimo Bertaccini è un ricercatore e docente che si occupa di crittografia, sicurezza informatica e tecnologie per la protezione delle informazioni. Con Brain Waves porta nella formazione un approccio che unisce ricerca, sperimentazione e applicazioni concrete. La crittografia è una delle basi della cybersecurity: serve a rendere leggibili i dati solo per chi è autorizzato, proteggendo comunicazioni, password, transazioni e informazioni sensibili. In questo spazio puoi scoprire come la matematica, la logica e la sicurezza informatica lavorano insieme per difendere il mondo digitale.
+FOTO (opzionale): Immagine del laboratorio Brain Waves, di Massimo Bertaccini durante una lezione o di elementi grafici legati alla crittografia, come chiavi, cifrari e algoritmi.
+VIDEO (opzionale): Breve video introduttivo: “Cos’è la crittografia e perché protegge i tuoi dati?”.
+ULTIMO AGGIORNAMENTO: 13/11/2026
+
+SPAZIO: Porta Ingresso azzurro
+TITOLO: Benvenuto nel Centro di Innovazione e Formazione Adriano Olivetti
+FRASE INTRODUTTIVA: Questo non è solo un edificio: è uno spazio pensato per trasformare Imola in un luogo di formazione, innovazione e opportunità.
+TESTO ESPLICATIVO: La sede di Via Aspromonte ospita il Centro di Innovazione e Formazione Adriano Olivetti, inaugurato nel 2025 negli spazi riqualificati dell’ex Zoo Acquario. È la sede del corso di Cybersecurity Specialist di Imola e rappresenta il legame tra territorio, imprese e formazione tecnica avanzata. Qui gli studenti trovano aule, laboratori e spazi pensati per l’apprendimento pratico e la collaborazione.
+FOTO (opzionale): Ingresso della sede, facciata o dettaglio architettonico del Centro Adriano Olivetti.
+VIDEO (opzionale): Video di benvenuto con un breve racconto della storia della sede e del suo rinnovamento.
+ULTIMO AGGIORNAMENTO: 13/11/2026
+
+SPAZIO: Porta Ufficio rosso
+TITOLO: Un punto di riferimento, sempre
+FRASE INTRODUTTIVA: In questo ufficio trovi tutor e coordinatori del corso: persone disponibili per accompagnarti lungo tutto il percorso.
+TESTO ESPLICATIVO: Tutor e coordinatori sono un supporto costante per gli studenti: rispondono a domande, aiutano a organizzare lo studio e le attività, offrono chiarimenti su stage, progetti e difficoltà personali o didattiche. Il loro ruolo è fare in modo che nessuno affronti il percorso da solo. Nell’ITS Olivetti l’accompagnamento è parte integrante del metodo: classi ridotte, confronto continuo e un tutor dedicato per ogni gruppo aiutano a costruire un’esperienza formativa più personale ed efficace.
+FOTO (opzionale): Foto dell’ufficio, degli studenti con i tutor o di un momento di confronto informale.
+VIDEO (opzionale): Breve intervista a un tutor o coordinatore: “Come possiamo aiutarti durante il percorso?”.
+ULTIMO AGGIORNAMENTO: 13/11/2026
+
+Passo 3: controlli su privacy e permessi (avviso importante)
+
+Controlli su privacy e permessi (avviso importante)
+
+Foto di minori: evitale. Se servono, serve il consenso scritto dei genitori e va concordato con la scuola (GDPR). Alternativa semplice: foto degli spazi vuoti, di oggetti o di mani/dettagli senza volti riconoscibili.
+Foto e video altrui: usa solo materiale tuo, della scuola o con licenza libera (es. Wikimedia Commons), citando l’autore.
+Niente dati personali: niente email, telefoni o nomi di studenti. Per i docenti, solo se hanno acconsentito e solo il ruolo.
+Niente orari o informazioni sulla sicurezza (es. quando un locale è vuoto, ubicazione di chiavi o allarmi).
+Ricorda: tutto ciò che pubblichi è visibile a chiunque su internet, non solo a chi scansiona il QR.
+
+Passo 4: pagina indice
+
+Anche se i visitatori arrivano dal QR, serve una pagina mappa con l’elenco di tutti gli spazi. Prepara:
+
+il titolo del sito (es. “Visita la nostra scuola”);
+una frase di benvenuto;
+l’elenco ordinato degli spazi, nello stesso ordine del percorso fisico se esiste.
+
+Passo 5: scegli l’identità del progetto
+
+Decidi ora, perché non si cambia più:
+
+il nome dell’account/organizzazione GitHub (es. its-olivetti o nome-scuola): comparirà nell’URL;
+il nome del repository (es. visita).

@@ -1,0 +1,396 @@
+/* ==========================================================================
+   stile.css — unico foglio di stile del sito "Visita il Centro Adriano Olivetti"
+   --------------------------------------------------------------------------
+   Regole di base:
+   - misure in rem: rispettano l'ingrandimento impostato sul telefono
+   - font di sistema: nessun download, la pagina appare subito
+   - contrasto testo/sfondo verificato (minimo richiesto 4,5:1)
+   - nessuna animazione
+   Per cambiare i colori basta modificare le variabili qui sotto.
+   ========================================================================== */
+
+/* --- 1. Variabili --------------------------------------------------------- */
+:root {
+  /* Colori del sito */
+  --colore-principale: #0b4f8a;        /* link e pulsanti (bianco sopra = 8,5:1) */
+  --colore-principale-scuro: #073a67;  /* pulsante sotto il dito / hover */
+  --colore-testo: #14181c;             /* nero su bianco = 17:1 */
+  --colore-testo-tenue: #3d454e;       /* note e didascalie = 9:1 */
+  --colore-sfondo: #ffffff;
+  --colore-sfondo-tenue: #eef2f6;
+  --colore-bordo: #5b6673;             /* contorni: contrasto 3,4:1 */
+  --colore-accento: #a92d17;           /* barra della frase introduttiva */
+
+  /* Colori dei QR (Fase 1). Servono solo ai pallini decorativi:
+     l'informazione è sempre scritta anche a parole. */
+  --colore-rosso: #8f2a1f;
+  --colore-blu: #0b4f8a;
+  --colore-viola: #5a2d82;
+  --colore-rosa: #9c2b62;
+  --colore-azzurro: #0f6e79;
+
+  /* Tipografia e misure */
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --larghezza: 40rem;                  /* colonna di lettura: max 800 px */
+  --spazio: 1.25rem;
+  --raggio: 0.5rem;
+}
+
+/* --- 2. Base ------------------------------------------------------------- */
+html {
+  /* 125% di 16 px = 20 px, ma resta relativo alle impostazioni dell'utente */
+  font-size: 125%;
+  -webkit-text-size-adjust: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--colore-testo);
+  background-color: var(--colore-sfondo);
+  /* niente testo giustificato: le righe restano facili da seguire */
+  text-align: left;
+}
+
+/* --- 3. Struttura: intestazione, contenuto, piede ------------------------ */
+header,
+main,
+footer {
+  max-width: var(--larghezza);
+  margin-inline: auto;
+  padding-inline: var(--spazio);
+}
+
+.intestazione {
+  padding-block: 1.75rem 1.1rem;
+  border-bottom: 0.2rem solid var(--colore-principale);
+}
+
+main {
+  padding-block: 0.5rem 1.5rem;
+  flex: 1 0 auto;
+}
+
+.piede {
+  padding-block: 1.5rem 2.5rem;
+  border-top: 0.1rem solid var(--colore-bordo);
+  margin-top: 1.5rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* --- 4. Link "Vai al contenuto" (visibile solo da tastiera) -------------- */
+.salta-al-contenuto {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  padding: 0.75rem 1rem;
+  background-color: var(--colore-principale);
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  z-index: 10;
+}
+
+.salta-al-contenuto:focus {
+  left: 0.5rem;
+  top: 0.5rem;
+  outline: 0.15rem solid var(--colore-testo);
+  outline-offset: 0.15rem;
+}
+
+/* --- 5. Tipografia ------------------------------------------------------- */
+h1 {
+  font-size: 1.65rem;
+  line-height: 1.25;
+  margin: 0.5rem 0 0.9rem;
+  overflow-wrap: break-word;
+}
+
+h2 {
+  font-size: 1.25rem;
+  line-height: 1.3;
+  margin: 2rem 0 0.6rem;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+ul,
+ol {
+  margin: 0 0 1rem;
+  padding-left: 1.4rem;
+}
+
+li {
+  margin-bottom: 0.4rem;
+}
+
+a {
+  color: var(--colore-principale);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+a:hover {
+  text-decoration-thickness: 0.12em;
+}
+
+/* Nome dell'istituto sopra il titolo.
+   Maiuscole normali: il testo tutto maiuscolo si legge peggio (Fase 3). */
+.marchio {
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--colore-testo-tenue);
+}
+
+/* Posizione fisica dello spazio: "Aula QR n.1 · colore rosso" */
+.posizione {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--colore-testo-tenue);
+}
+
+/* Frase introduttiva: barra colorata + testo, non solo colore */
+.introduzione {
+  margin: 1.25rem 0 1.5rem;
+  padding: 0.1rem 0 0.1rem 0.9rem;
+  border-left: 0.35rem solid var(--colore-accento);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.aggiornamento {
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  color: var(--colore-testo-tenue);
+}
+
+/* --- 6. Pallini dei colori (decorativi: il colore è scritto anche a parole) */
+.pallino {
+  display: inline-block;
+  width: 0.85rem;
+  height: 0.85rem;
+  margin-right: 0.45rem;
+  border: 0.1rem solid var(--colore-testo);
+  border-radius: 50%;
+  vertical-align: -0.05rem;
+  background-color: var(--colore-sfondo-tenue);
+}
+
+.pallino-rosso { background-color: var(--colore-rosso); }
+.pallino-blu { background-color: var(--colore-blu); }
+.pallino-viola { background-color: var(--colore-viola); }
+.pallino-rosa { background-color: var(--colore-rosa); }
+.pallino-azzurro { background-color: var(--colore-azzurro); }
+
+/* --- 7. Immagini --------------------------------------------------------- */
+figure {
+  margin: 1.5rem 0;
+}
+
+figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 0.1rem solid var(--colore-bordo);
+  border-radius: var(--raggio);
+}
+
+figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--colore-testo-tenue);
+}
+
+/* --- 8. Video ------------------------------------------------------------ */
+/* Il contenitore mantiene le proporzioni 16:9 mentre l'iframe carica */
+.video-contenitore {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin-bottom: 0.75rem;
+  background-color: var(--colore-sfondo-tenue);
+  border: 0.1rem solid var(--colore-bordo);
+  border-radius: var(--raggio);
+  overflow: hidden;
+}
+
+.video-contenitore iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Riquadro apri/chiudi con la trascrizione */
+details {
+  margin: 1.5rem 0;
+  padding: 0.75rem 1rem;
+  background-color: var(--colore-sfondo-tenue);
+  border: 0.1rem solid var(--colore-bordo);
+  border-radius: var(--raggio);
+}
+
+summary {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+summary:hover {
+  text-decoration: underline;
+}
+
+details p {
+  margin: 0.75rem 0 0;
+}
+
+/* --- 9. Pulsanti --------------------------------------------------------- */
+.pulsante {
+  display: inline-block;
+  min-height: 3.5rem;          /* area di tocco ampia */
+  padding: 0.7rem 1.1rem;
+  background-color: var(--colore-principale);
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  border-radius: var(--raggio);
+}
+
+.pulsante:visited {
+  color: #ffffff;
+}
+
+.pulsante:hover {
+  background-color: var(--colore-principale-scuro);
+}
+
+/* --- 10. Mappa: elenco degli spazi (index.html) ------------------------- */
+.elenco-spazi {
+  list-style: none;
+  margin: 1.5rem 0;
+  padding: 0;
+  display: grid;
+  gap: 0.9rem;
+}
+
+.scheda {
+  display: block;
+  padding: 1rem 1.1rem;
+  background-color: var(--colore-sfondo);
+  color: var(--colore-testo);
+  border: 0.15rem solid var(--colore-bordo);
+  border-radius: var(--raggio);
+  text-decoration: none;
+}
+
+.scheda:hover {
+  background-color: var(--colore-sfondo-tenue);
+  border-color: var(--colore-principale);
+}
+
+.scheda-numero {
+  display: inline-block;
+  min-width: 1.8rem;
+  margin-bottom: 0.25rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--colore-testo-tenue);
+}
+
+.scheda-titolo {
+  display: block;
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.35;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.scheda-dettagli {
+  display: block;
+  margin-top: 0.35rem;
+  font-size: 0.85rem;
+  color: var(--colore-testo-tenue);
+}
+
+/* --- 11. Note e avvisi --------------------------------------------------- */
+.nota {
+  padding: 1rem 1.1rem;
+  background-color: var(--colore-sfondo-tenue);
+  border-left: 0.35rem solid var(--colore-bordo);
+  border-radius: 0 var(--raggio) var(--raggio) 0;
+  font-size: 0.9rem;
+}
+
+/* --- 12. Tastiera: contorno sempre visibile ------------------------------ */
+:focus-visible {
+  outline: 0.15rem solid var(--colore-testo);
+  outline-offset: 0.15rem;
+}
+
+/* Fallback per browser che non supportano :focus-visible */
+a:focus,
+summary:focus,
+button:focus {
+  outline: 0.15rem solid var(--colore-testo);
+  outline-offset: 0.15rem;
+}
+
+/* --- 13. Movimento ridotto ---------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* --- 14. Schermi larghi -------------------------------------------------- */
+@media (min-width: 50rem) {
+  .intestazione {
+    padding-block: 2.5rem 1.5rem;
+  }
+}
+
+/* --- 15. Stampa ---------------------------------------------------------- */
+@media print {
+  .salta-al-contenuto,
+  .pulsante,
+  .video-contenitore {
+    display: none;
+  }
+
+  body {
+    font-size: 12pt;
+    color: #000000;
+    background-color: #ffffff;
+  }
+
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.85em;
+  }
+}

@@ -1,0 +1,54 @@
+Fase 2: template e CSS
+
+Ho preparato i file e li ho provati su uno schermo largo come uno smartphone (390 px). Il layout regge, non ci sono sovrapposizioni e i link interni funzionano.
+
+Cosa hai ricevuto
+File	A cosa serve
+css/stile.css	L’unico foglio di stile del sito
+spazi/_template/index.html	Il modello da duplicare per ogni nuovo spazio
+spazi/biblioteca/index.html	Una pagina d’esempio già compilata
+index.html	La mappa con l’elenco degli spazi
+img/biblioteca/ingresso.webp	Un’immagine segnaposto, da sostituire con una tua foto
+
+Struttura da ricreare sul tuo computer (le cartelle devono avere questi nomi):
+
+sito/
+├── index.html
+├── css/stile.css
+├── img/biblioteca/ingresso.webp
+└── spazi/
+    ├── _template/index.html
+    └── biblioteca/index.html
+
+Puoi provare tutto senza internet: apri index.html con un doppio clic nel browser.
+
+Il template, blocco per blocco
+<html lang="it">: dice allo screen reader di leggere in italiano. Senza questo, la pronuncia sarebbe sbagliata.
+<meta name="viewport" ...>: fa adattare la pagina al telefono. Senza, si vedrebbe minuscola.
+<title>: il nome nella scheda del browser. È anche la prima cosa che legge uno screen reader. Scrivi “Spazio – Scuola”.
+<link rel="stylesheet" href="../../css/stile.css">: collega il CSS. I due ../ significano “esci da due cartelle”: da spazi/biblioteca/ si risale alla radice.
+Link “Vai al contenuto”: invisibile finché non si preme Tab. Serve a chi usa la tastiera o uno screen reader per saltare l’intestazione.
+<header>, <main>, <footer>: i tre “pezzi” della pagina. Gli screen reader permettono di spostarsi direttamente tra questi blocchi.
+<h1>: un solo titolo per pagina, che dice dove sei. <h2> per i sottotitoli, senza saltare livelli.
+<p class="introduzione">: la frase introduttiva, con una barra colorata a sinistra, così non dipende solo dal colore.
+Il blocco <figure>: contiene l’immagine. width e height evitano che la pagina “salti” mentre carica, loading="lazy" scarica la foto solo quando serve, alt la descrive a chi non la vede.
+Il blocco video: usa youtube-nocookie.com (meno tracciamento), non parte da solo e ha un title obbligatorio per gli screen reader. Sotto c’è un link di riserva e la trascrizione in un riquadro apri/chiudi.
+Il pulsante “Torna alla mappa”: lascialo sempre. La freccia ha aria-hidden perché lo screen reader non deve leggerla.
+Come duplicare una pagina
+Copia la cartella spazi/_template e chiamala con lo slug deciso nella Fase 1 (es. spazi/laboratorio-informatica).
+Apri index.html e cerca i commenti [MODIFICA]: sono tutti i punti da cambiare.
+Se non serve la foto o il video, cancella l’intero blocco (dal commento iniziale al </figure> o al </details>).
+Metti le foto in img/slug-dello-spazio/.
+Aggiungi una riga <li> nella mappa index.html.
+Il CSS: le scelte principali
+Font da 20 px e interlinea 1,6: più grandi del normale, comodi per anziani e persone con vista ridotta. Usa le dimensioni relative (rem), quindi rispetta le impostazioni di ingrandimento del telefono.
+Font di sistema: nessun download, la pagina compare subito anche con rete debole.
+Contrasto: il testo nero su bianco ha circa 17:1 e il bianco sul blu dei pulsanti circa 8,5:1. Il minimo richiesto è 4,5:1.
+Pulsanti alti almeno 3,5 rem (56 px) e con spazio tra loro, per evitare tocchi sbagliati.
+Focus visibile: chi naviga con la tastiera vede un contorno scuro sull’elemento selezionato.
+Nessuna animazione, e comunque disattivata per chi la rifiuta nelle impostazioni del telefono.
+Colonna larga al massimo 40 rem: su tablet e computer il testo non diventa illeggibilmente lungo.
+Per cambiare i colori: modifica le variabili in cima (--colore-principale ecc.). Se metti il colore della scuola, ricontrolla il contrasto su webaim.org/resources/contrastchecker (gratuito).
+Due avvisi
+Il video su YouTube carica comunque script di Google quando si preme play. Se vuoi zero tracciamento, la strada è un file video leggero ospitato nel sito: ne parliamo nella Fase 4.
+Non cambiare mai i nomi delle cartelle dopo aver stampato i QR: l’URL deriva da quei nomi.

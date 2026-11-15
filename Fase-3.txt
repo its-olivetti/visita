@@ -1,0 +1,61 @@
+Fase 3: creazione delle pagine
+Ogni spazio diventa una cartella con un file index.html copiato dal template; con i testi pronti bastano 10-20 minuti a pagina.
+
+Cosa fare, in ordine
+1.  Crea sul computer la cartella sito/ con la struttura della Fase 2 (index.html, css/, img/, spazi/).
+2.  Installa un editor di testo semplice e gratuito: Visual Studio Code (code.visualstudio.com) oppure il Blocco note. Non usare Word: aggiunge simboli che rompono la pagina.
+3.  Per ogni riga della tabella della Fase 1, copia la cartella spazi/_template e rinominala con lo slug (esempio: spazi/competenze-trasversali).
+4.  Apri il file index.html della nuova cartella e cerca [MODIFICA]: sono tutti i punti da cambiare.
+5.  Metti le foto in img/<slug>/ (se sono pesanti, fai prima la Fase 4).
+6.  Aggiungi una riga nella mappa index.html principale.
+7.  Apri la pagina con doppio clic e controllala sul computer e, ridimensionando la finestra, in formato telefono.
+
+Gli slug dei tuoi cinque fogli
+I cinque screenshot che mi hai mandato corrispondono a cinque pagine. Ti propongo questi slug, da confermare con i colleghi prima di stampare:
+
+| Foglio | Slug | URL finale (esempio) |
+|---|---|---|
+| Competenze Trasversali (Soft Skills) | competenze-trasversali | https://NOME.github.io/visita/spazi/competenze-trasversali/ |
+| Competenze Tecniche (Hard Skills) | competenze-tecniche | https://NOME.github.io/visita/spazi/competenze-tecniche/ |
+| Informazioni Macro-settore | macro-settore | https://NOME.github.io/visita/spazi/macro-settore/ |
+| Struttura e Sede | struttura-e-sede | https://NOME.github.io/visita/spazi/struttura-e-sede/ |
+| Corso Specifico | corso-specifico | https://NOME.github.io/visita/spazi/corso-specifico/ |
+
+NOME è il nome dell'account o organizzazione GitHub scelto nella Fase 1.
+
+Esempio: le parti da compilare
+
+<title>Competenze trasversali – Visita la nostra scuola</title>
+<meta name="description" content="Le competenze trasversali (soft skills) che le aziende cercano di più.">
+
+<h1>Le competenze trasversali</h1>
+<p class="introduzione">Sono le abilità che servono in ogni lavoro: comunicare, collaborare, risolvere problemi.</p>
+<p>Le chiamiamo <span lang="en">soft skills</span>. Si allenano a scuola, nei laboratori e nei progetti di gruppo.</p>
+
+Il lang="en" sulle parole inglesi serve allo screen reader per pronunciarle correttamente.
+
+Regole di scrittura
+
+| Invece di | Scrivi |
+|---|---|
+| "Clicca qui" | "Torna alla mappa degli spazi" |
+| Sigle senza spiegazione ("ITS", "UF") | "ITS Academy (istituto tecnico superiore)" alla prima occorrenza |
+| Paragrafi di 10 righe | Paragrafi di 2-3 frasi |
+| Titoli creativi ("Il cuore pulsante!") | Titoli che dicono dove sei ("La biblioteca") |
+| Tutto maiuscolo | Maiuscole normali: sono più leggibili |
+
+Controlli per ogni pagina
+
+[ ] C'è un solo <h1> e dice il nome dello spazio.
+[ ] La frase introduttiva ha al massimo 25 parole.
+[ ] Ogni immagine ha un alt utile (o alt="" se solo decorativa).
+[ ] Non è rimasto nessun [MODIFICA], NOME, CODICEVIDEO o testo segnaposto.
+[ ] I blocchi foto e video non usati sono stati cancellati per intero.
+[ ] La data di aggiornamento in fondo è corretta.
+[ ] Il pulsante "Torna alla mappa" funziona.
+[ ] La pagina compare nella mappa.
+
+Nota: nel progetto di questo sito la Fase 3 è stata applicata ai 10 spazi
+definiti nella Fase 1 (aula-n1 ... porta-ufficio). I cinque slug proposti qui
+sopra sono l'esempio del corso e non sono stati usati: gli indirizzi dei QR
+erano già stati scelti nella Fase 1. I controlli sono in controlli-fase-3.md.

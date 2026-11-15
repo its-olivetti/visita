@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- [MODIFICA 1] Titolo nella scheda del browser: "Spazio – Centro Adriano Olivetti".
+       È la prima cosa che legge uno screen reader. -->
+  <title>NOME SPAZIO – Centro Adriano Olivetti</title>
+
+  <!-- [MODIFICA 2] Descrizione in una frase, senza dati personali. -->
+  <meta name="description" content="Descrizione breve di che cosa si trova in questo spazio.">
+
+  <link rel="stylesheet" href="../../css/stile.css">
+</head>
+<body>
+
+  <a class="salta-al-contenuto" href="#contenuto">Vai al contenuto</a>
+
+  <header class="intestazione">
+    <p class="marchio">Centro di Innovazione e Formazione Adriano Olivetti</p>
+
+    <!-- [MODIFICA 3] Un solo h1 per pagina. -->
+    <h1>TITOLO DELLO SPAZIO</h1>
+
+    <!-- [MODIFICA 4] Posizione fisica e colore del QR.
+         Cambia anche la classe del pallino: pallino-rosso, pallino-blu,
+         pallino-viola, pallino-rosa, pallino-azzurro. -->
+    <p class="posizione"><span class="pallino pallino-rosso" aria-hidden="true"></span>POSIZIONE FISICA · colore rosso</p>
+  </header>
+
+  <main id="contenuto">
+
+    <!-- [MODIFICA 5] Frase introduttiva: una sola, breve. -->
+    <p class="introduzione">FRASE INTRODUTTIVA DELLO SPAZIO.</p>
+
+    <!-- [MODIFICA 6] Testo esplicativo: paragrafi di 2 o 3 frasi.
+         Regole di scrittura della Fase 3:
+         - le sigle vanno spiegate alla prima occorrenza
+           (es. ITS Academy, istituto tecnico superiore)
+         - le parole inglesi vanno chiuse in <span lang="en">...</span>,
+           così lo screen reader le pronuncia bene
+         - niente dati personali, orari o informazioni sulla sicurezza -->
+    <p>TESTO ESPLICATIVO DELLO SPAZIO.</p>
+
+    <!-- ------------------------------------------------------------------
+         [MODIFICA 7] FOTO
+         Se la foto non serve, cancella tutto il blocco <figure> qui sotto.
+         Se la usi:
+         1. metti il file in img/NOME-CARTELLA/
+         2. aggiorna src, alt, width e height (width e height veri dell'immagine:
+            evitano che la pagina salti durante il caricamento)
+         3. l'alt descrive ciò che si vede, non "foto 1"
+         ------------------------------------------------------------------ -->
+    <figure>
+      <img src="../../img/NOME-CARTELLA/immagine.png"
+           width="1200" height="800" loading="lazy"
+           alt="Descrizione di ciò che si vede nell'immagine, in una frase.">
+      <figcaption>Didascalia facoltativa.</figcaption>
+    </figure>
+
+    <!-- ------------------------------------------------------------------
+         [MODIFICA 8] VIDEO (facoltativo)
+         Per attivarlo: togli il commento che apre e chiude questo blocco
+         (le righe "inizio video" e "fine video"), poi sostituisci VIDEO_ID
+         con l'identificativo YouTube, cioè la parte dopo "v=".
+         Se non hai il video, lascia tutto commentato: la pagina funziona.
+
+         inizio video
+    <section aria-labelledby="titolo-video">
+      <h2 id="titolo-video">Video</h2>
+      <div class="video-contenitore">
+        <iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID"
+                title="Descrizione del contenuto del video"
+                loading="lazy"
+                allow="accelerometer; encrypted-media; picture-in-picture"
+                allowfullscreen></iframe>
+      </div>
+      <p>
+        <a href="https://www.youtube.com/watch?v=VIDEO_ID">Guarda il video su YouTube</a>
+        (si apre in una nuova scheda).
+      </p>
+      <details>
+        <summary>Trascrizione del video</summary>
+        <p>Qui va il testo di ciò che viene detto nel video, così il contenuto è
+        disponibile anche a chi non può sentirlo o non può vederlo.</p>
+      </details>
+    </section>
+         fine video
+         ------------------------------------------------------------------ -->
+
+    <p class="aggiornamento">Ultimo aggiornamento: 13/11/2026</p>
+
+  </main>
+
+  <footer class="piede">
+    <a class="pulsante" href="../../index.html"><span aria-hidden="true">←</span> Torna alla mappa degli spazi</a>
+  </footer>
+
+</body>
+</html>

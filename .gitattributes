@@ -1,0 +1,9 @@
+# Gli a capo non vengono convertiti a seconda del sistema: il sito resta identico
+* text=auto eol=lf
+
+# Immagini: nessuna conversione
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.gif binary
