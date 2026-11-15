@@ -153,23 +153,39 @@ cancella il blocco per intero, come chiede la checklist della Fase 3.
   pulsanti o il colore di sfondo, ricontrolla il contrasto su
   <https://webaim.org/resources/contrastchecker/> (gratuito).
 
-## 7. Pubblicare il sito (GitHub Pages)
+## 7. Il sito è online (GitHub Pages)
 
-1. Crea il repository `visita` sull'account scelto nella Fase 1 (es. `its-olivetti`).
-2. Carica tutto il contenuto di questa cartella, mantenendo la struttura.
-3. In *Settings → Pages* scegli il ramo `main` e la cartella `/ (root)`.
-4. Il sito risponderà a `https://<account>.github.io/visita/`.
-5. URL di ogni spazio: `https://<account>.github.io/visita/spazi/aula-n1/`.
-   Questi sono gli indirizzi da trasformare in QR code.
+- Repository: <https://github.com/its-olivetti/visita> (pubblico)
+- Sito: <https://its-olivetti.github.io/visita/>
+- Pubblicazione: ramo `main`, cartella `/ (root)`, rebuild automatico a ogni push
+- Elenco degli indirizzi per i QR: `url-qr.txt`
 
-Attenzione a due cose:
+### Aggiornare il sito
 
-- **Maiuscole**: la cartella `spazi/porta-BW/` ha la "BW" maiuscola, come nello
-  slug della Fase 1. Su GitHub l'indirizzo è sensibile alle maiuscole: il QR
-  deve contenere esattamente `porta-BW`, altrimenti la pagina non si apre. Se
-  preferisci evitare ogni rischio, rinomina **adesso** la cartella in
-  `porta-bw` e aggiorna il link in `index.html`.
-- **Mai rinominare** le cartelle dopo aver stampato i QR.
+Dopo aver modificato o sostituito file:
+
+```
+git add -A
+git commit -m "Descrizione della modifica"
+git push
+```
+
+GitHub Pages ricostruisce in uno o due minuti.
+
+### Maiuscole: verifica fatta sul sito vero
+
+La cartella `spazi/porta-BW/` ha la "BW" maiuscola, come nello slug della
+Fase 1. Su GitHub l'indirizzo è sensibile alle maiuscole e la prova è questa:
+
+| URL | Risposta |
+|---|---|
+| `https://its-olivetti.github.io/visita/spazi/porta-BW/` | 200 (funziona) |
+| `https://its-olivetti.github.io/visita/spazi/porta-bw/` | 404 (non esiste) |
+
+Quindi il QR di quello spazio deve contenere esattamente `porta-BW`. Se
+preferisci eliminare ogni rischio, rinomina **adesso** la cartella in
+`porta-bw` e aggiorna il link in `index.html`: è una modifica di due minuti, ma
+va fatta prima di stampare i QR.
 
 ## 8. Controlli prima di stampare i QR
 
